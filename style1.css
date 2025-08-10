@@ -1,0 +1,146 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url(Desain\ tanpa\ judul\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kotak {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid black;
+    backdrop-filter: blur(10px);
+}
+
+#display {
+    text-align: center;
+}
+
+.kotak input {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+
+.kotak button {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.kotak button:hover {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgb(107, 107, 108);
+    color: white;
+    font-weight: bold;
+
+}
+
+.navbar {
+    position: absolute;
+    /* backdrop-filter: blur(5px); */
+    background-color: black;
+    box-shadow: 3px 3px 5px black;
+    height: 4em;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin: 20px;
+    font-size: 20px;
+    position: relative;
+    padding: 5px;
+    transition: 500ms;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.navbar li:hover {
+    list-style-type: none;
+    margin: 20px;
+    font-size: 20px;
+    background-color: rgb(164, 163, 163);
+    padding: 5px;
+    border-radius: 10px;
+    transform: rotateY(1, 2);
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: black
+}
+
+@media (max-width:390px) and (max-height:844px) {
+    .con {
+        padding: 30px;
+    }
+
+    .navbar li {
+        list-style-type: none;
+        margin: 10px;
+        font-size: 15px;
+        position: relative;
+        top: 5px;
+        padding: 6px;
+        transition: 500ms;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    .navbar li:hover {
+        list-style-type: none;
+        margin: 10px;
+        font-size: 15px;
+        position: relative;
+        top: 5px;
+        padding: 6px;
+        transition: 500ms;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+}
+
+@media (max-width:640px) and (max-height:360px) {
+    .con {
+        padding:40px;
+        
+    }
+    .kotak {
+        height:230px;
+        width:350px;
+    }
+}
